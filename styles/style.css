@@ -12,9 +12,11 @@
 }
 
 .header {
+  background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  
   
   /* parameters for the header section */
 }
@@ -46,10 +48,11 @@
   top: 550px;
   width: 388px;
   left: 64px;
-  z-index: 1;
+  z-index: 2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  padding-bottom: 0;
 }
 
 .header__main-illustration {
@@ -58,7 +61,7 @@
   height: 608px;
   right: 0px; 
   top: 115px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -71,64 +74,70 @@
   background-color: #2f80ed;
 }
 
-.content {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 .description {
   display: flex;
-  width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;  
   
 }
 
-.flex-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  
-  
-}
-
-.flex-column {
+.two-columns {
+  min-height: 790px;
   display: flex;
   justify-content: center;
-  justify-content: space-between;
-  width: 80%;
+  flex-wrap: wrap;
+  flex-direction: row;
   min-width: 784px;
-  
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
 }
 
-
-.two-columns__brief{
+.two-columns__brief {
+  color: #2f80ed;
+  display: flex;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  width: 175px;  
+  width: 175px;
+  text-align: justify;
+  flex-direction: row;
+  margin-top: 100px;
 }
 
-.flex-row_space_bottom {
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
   margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: justify;
 }
 
 .two-columns__paragraph {
   line-height: 34px;
-  min-width: 784px;
-  width: 80%;
-}
-
-.two-columns__brief {
-  width: 175px
-}
-
-.two-columns__paragraph {
-  
-  flex-direction: column; 
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
   font-weight: bold;
 } 
+
+.digits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  width: 1100px;
+  margin: auto;
+}
 
 .section-title {
   line-height: 1.15;
@@ -137,7 +146,7 @@
   margin-top: 100px;
   width: 60%;
   margin: 0;  
-  padding: 0 20%;  
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -151,24 +160,11 @@
   padding: 0 20%;
 }
 
-.digits {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-  width: 1100px;
-  margin: auto;
-}
-
 .table {
   
   display: flex;
-  flex-flow: row wrap;
-  
-  /*
-  margin: auto;
-  margin-bottom: 100px; */
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .table__cell {
