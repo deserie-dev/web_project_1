@@ -16,9 +16,6 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  
-  
-  /* parameters for the header section */
 }
 
 .logo_place_header {
@@ -64,7 +61,6 @@
   z-index: 2;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   top: 64px;
   position: absolute;
@@ -81,7 +77,6 @@
   text-align: center;
   flex-direction: row;
   flex-wrap: wrap;  
-  
 }
 
 .two-columns {
@@ -161,7 +156,6 @@
 }
 
 .table {
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -196,9 +190,6 @@
   background-size: 867px 637px ;
   background-position: left 0px bottom;
   height: 790px;
-  
-
-  
 }
 
 .feynman__title {
@@ -231,7 +222,7 @@
 }
 
 .kaufman {
-  background-color: #1f1f1f;
+  background-color: black;
   color: white;
   position: relative;
   display: flex;
@@ -240,30 +231,15 @@
   justify-items: center;
   align-items: center;
   overflow: hidden;
-  /*align-content: space-between;*/
   width: 100%;
-  /*align-content: space-between;*/
-  
-  
-
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-  width: 1100px;
-  margin: auto;*/
 }
 
 .section-title_theme_dark {
   color: white;
-  
-  /*width: 1100px;*/
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   z-index: 1;
-  
   padding: 0 20%;  
   text-align: center;
 }
@@ -281,41 +257,23 @@
 }
 
 .table_theme_dark {
-  
-  /*position: relative;*/
-  /*background-color: #1E1E1E;*/
   display: flex;
-  /*padding-right: 40px;*/
   flex-direction: row;
   flex-wrap: wrap;
-  /*margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  padding-left: 30px;
-  margin-top: 80px;*/
   align-items: center;
   justify-content: center;
   align-content: space-between;
   width: 1100px;
   margin: auto;
-  
-  
 }
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-  /*width: 200px;*/
-  color: white;
-  /*margin-right: 0;*/
-  
-  margin-bottom: 80px;
-  /*align-content: space-between;*/
-  align-items: center;
-  
-  z-index: 1;
 
+.table__cell_theme_dark {
+  color: white;
+  margin-bottom: 80px;
+  align-items: center;
+  z-index: 1;
   width: 200px;
   margin-top: 60px; 
-  
 }
 
 .table__heading_theme_dark {
@@ -339,111 +297,48 @@
   position: absolute;
   right: -210px;
   top: 0px;
-  
-
-  
 }
 
 .footer {
   background-color: black;
-  /*list-style: none;
+  display: flex;
+  flex-basis: 711px;
   color: white;
-  text-decoration: none;*/
-  width: 100%;
-  /*
-  width: ;
-  display: ;
-  overflow: ;
-  padding: ;
-  
-
-
-  */
-    
+  min-height: 350px;
 }
 
-
 .footer__columns {
-  min-height: 350px;
-  padding-top: 60px;
-  padding-bottom: 40px;
   width: 90%;
-  flex-basis: 711px;
-  /*justify-content: space-evenly;*/
-  color: white;
-  position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  /*justify-content: center;*/
-  /*justify-content: space-between;*/
   justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-  
-  
-  display: block;
-  margin: 0 auto;
-  /*width: 1100px;*/
-  height: 100%
-  
-  
-  
+  margin: 60px auto 40px;    
 }
 
 .footer__column_content_copyright {
-  display: block;
-  flex-basis: 711px;
-
-  /*
-  width: 35%;
-  float: left;
-  height: 100%;
-
-  */
-  
+  /*flex-basis: 711px;*/
+  flex-basis: 50%;
+  justify-self: flex-start;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
-  
+  width: 183px;
   height: 35px;
 }
 
 .footer__author{
-  margin-top: 18px;
-  margin-bottom: 18px;
-  line-height: 25px;
-  
-  
-  
   padding-top: 200px;
-}
-
-.footer__column_content_info{
-  display: block;
-  float: left; 
-  
-  
-  
-  right: -700px;
-  height: 100%;
-  position: relative;
-  top: -340px;
-  
-  
-  
-  
- 
-
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .footer__column-heading {
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
-  display: block;
+  margin: 0;
 }
 
 .footer__column-links {
@@ -457,48 +352,28 @@
   color: white;
   text-decoration: none;
   display: block;
-  
-}
-
-
-.footer__column_content_social {
-  display: block;
-  
-  
-  margin:auto;
-  float: right;
-  height: 100%;
-  position: relative;
-  top: -340px;
-  padding-right: 20px;
-  
-
 }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  display: block;
-  color: white !important;
-  text-decoration: none !important;
-  
-  
-
+  margin-right: 10px;
 }
 
 .facebook {
-  font-size: 18px;
-  font-weight: normal;
+  display: flex;
   color: white;
   text-decoration: none;
-  display: block;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .instagram {
-  font-size: 18px;
-  font-weight: normal;
   color: white;
   text-decoration: none;
-  display: block;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
