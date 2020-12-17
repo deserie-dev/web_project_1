@@ -1,14 +1,18 @@
 .page {
-  min-width: 1100px;
+  /*min-width: 1100px;*/
   /* we don't know how to make mobile versions of websites yet, */
   /* so here we've set a minimum page width */
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   /* here we've set a maximum page width */
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   /* this ensures that all content is centered on screens wider than 1600px */
-  padding: 0px;
+  /*padding: 0px;
   overflow-x: hidden;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  max-width: 1600px;
+  min-width: 1100px;
 }
 
 .header {
@@ -16,6 +20,13 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .logo_place_header {
@@ -28,28 +39,35 @@
 }
 
 .header__title {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 2;
-  margin-right: 250px;
   width: 730px;
-  left: 64px;
-  line-height: 96px;
+  margin-left: 64px;
+  flex-direction: column;
+  align-items: center;
   font-size: 102px;
   font-weight: bold;
+  line-height: 96px;
+  position: absolute;
+  z-index: 1;
+  /*position: absolute;
+    margin-right: 250px;
+  */
+
+  /* align-self: center;
+  max-width: 730px;
+  margin: 0 0 0 64px;
+  */
 }
 
 .header__subtitle {
   position: absolute;
-  top: 550px;
   width: 388px;
-  left: 64px;
-  z-index: 2;
+  margin-left: 64px;
+  z-index: 1;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  padding-bottom: 0;
+  margin-bottom: 30px;
+  top: 550px;
 }
 
 .header__main-illustration {
@@ -59,6 +77,9 @@
   right: 0px;
   top: 115px;
   z-index: 2;
+
+  object-fit: contain;
+  bottom: 0;
 }
 
 .header__square-pic {
@@ -188,6 +209,7 @@
   background-repeat: no-repeat;
   background-size: 867px 637px;
   background-position: left 0px bottom;
+  background-color: #f2f2f2;
   height: 790px;
 }
 
@@ -221,19 +243,22 @@
 }
 
 .kaufman {
-  background-color: black;
+  background-color:  #1f1f1f;
   color: white;
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-items: center;
-  align-items: center;
   overflow: hidden;
   width: 100%;
+
+  
+  justify-content: center;
+  align-content: space-between;
+  margin: auto;
 }
 
-.section-title_theme_dark {
+.section__title_theme_dark {
   color: white;
   line-height: 1.15;
   font-size: 60px;
@@ -243,7 +268,7 @@
   text-align: center;
 }
 
-.section-subtitle_theme_dark {
+.section__subtitle_theme_dark {
   color: white;
   width: 60%;
   line-height: 34px;
@@ -259,7 +284,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   align-content: space-between;
   width: 1100px;
@@ -269,7 +293,6 @@
 .table__cell_theme_dark {
   color: white;
   margin-bottom: 80px;
-  align-items: center;
   z-index: 1;
   width: 200px;
   margin-top: 60px; 
@@ -288,6 +311,9 @@
   font-size: 18px;
   font-weight: normal;
   z-index: 1;
+  text-align: justify;
+  width: 200px;
+  margin-right: 0;
 }
 
 .kaufman__triangle {
@@ -299,7 +325,7 @@
 }
 
 .footer {
-  background-color: black;
+  background-color:  #1f1f1f;
   display: flex;
   flex-basis: 711px;
   color: white;
