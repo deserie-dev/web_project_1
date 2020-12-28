@@ -55,6 +55,7 @@
   bottom: 30px;
   margin-top: 0px;
   margin-right: 0px;
+  margin-bottom: 0px;
   padding: 0px;
 }
 
@@ -132,7 +133,6 @@
 .digits {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -151,7 +151,7 @@
 
 .section-subtitle {
   line-height: 34px;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: normal;
   text-align: center;
   width: 60%;
@@ -255,25 +255,13 @@
 }
 
 .section-title_theme_dark {
-  width: 60%;
   color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 1.15;
-  margin: 0px;
   padding: 0px;
   z-index: 3;
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
   color: white;
-  text-align: center;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 34px;
-  margin: 0px;
   padding: 20px 0px 0px 0px;
   z-index: 3;
 }
@@ -281,9 +269,6 @@
 .table_theme_dark {
   color: white;
   z-index: 2;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
 }
 
 .table__cell_theme_dark {
@@ -380,9 +365,6 @@
   font-weight: normal;
   color: white;
   text-decoration: none;
-}
-
-li {
   list-style-type: none;
 }
 
