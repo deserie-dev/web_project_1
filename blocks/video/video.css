@@ -1,0 +1,13 @@
+@import url(../section-title/section-title.css);
+@import url(../section-subtitle/section-subtitle.css);
+@import url(./__iframe/video__iframe.css);
+@import url(./__iframes/video__iframes.css);
+
+.video {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;  
+}

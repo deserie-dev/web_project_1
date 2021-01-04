@@ -3,22 +3,6 @@
 @import url(./__title/cards__title.css);
 @import url(./__description/cards__description.css);
 
-/*.cards {
-  margin: auto;
-  flex-wrap: wrap;
-  display: flex;
-  align-items: baseline;
-  padding-left: 0;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  width: 920px;*/
-
 .cards {
   display: flex;
   flex-direction: row;
