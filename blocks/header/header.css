@@ -3,6 +3,7 @@
 @import url(./__square-pic/header__square-pic.css);
 @import url(./__subtitle/header__subtitle.css);
 @import url(./__title/header__title.css);
+@import url(../rotation/rotation.css);
 @import url(../logo/_logo_place_header.css);
 
 .header {
