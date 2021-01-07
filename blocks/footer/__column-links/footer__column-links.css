@@ -5,7 +5,3 @@
   opacity: 1.0;
   transition: opacity 1s linear 1s;
 }
-  
-.footer__column-links:hover {
-  opacity: .4;
-}

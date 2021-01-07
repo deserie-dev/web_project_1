@@ -1,7 +1,4 @@
 @import url(./__triangle/kaufman__triangle.css);
-@import url(../section-subtitle/_theme/section-subtitle_theme_dark.css);
-@import url(../section-title/_theme/section-title_theme_dark.css);
-@import url(../table/table.css);
 
 .kaufman {
   background-color:  #1f1f1f;
@@ -13,3 +10,7 @@
   padding-top: 90px;
   padding-bottom: 90px;
 }
+
+  /*height: 100vh;
+  min-height: 600px;
+  max-height: 756px;*/
