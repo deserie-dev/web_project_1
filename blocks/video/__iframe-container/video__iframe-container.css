@@ -1,0 +1,3 @@
+.video__iframe-container:nth-child(odd) {
+  margin-right: 20px;
+}
