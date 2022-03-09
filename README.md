@@ -33,3 +33,5 @@ sudo lsof -i:8080
 ![](/images/j2.png)
 
 ---
+
+2. Create a job, give it a name, click 'Pipeline'
