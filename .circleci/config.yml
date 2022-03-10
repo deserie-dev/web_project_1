@@ -1,7 +1,3 @@
-version: 2.1
-orbs:
-  aws-cli: circleci/aws-cli@2.0
-
 jobs:
   build_deploy:
     machine:
@@ -15,17 +11,9 @@ jobs:
           sudo ./aws/install --update
       - run: aws s3 sync . s3://learning-how-to-learn
 
-    aws-cli-cred-setup:
-      executor: aws-cli/default
-      steps:
-        - aws-cli/setup:
-            aws-access-key-id: Access_key_ID
-            aws-secret-access-key: Secret_access_key
-            aws-region: Region
-
 workflows:
+version: 2
   execute_bulk:
     jobs:
       - build_deploy
-      - aws-cli-cred-setup:
-          context: aws
+
