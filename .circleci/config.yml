@@ -12,8 +12,7 @@ jobs:
       - run: aws s3 sync . s3://learning-how-to-learn
 
 workflows:
-version: 2
+  version: 2
   execute_bulk:
     jobs:
       - build_deploy
-
