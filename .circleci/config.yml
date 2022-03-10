@@ -8,9 +8,8 @@ jobs:
       - checkout
       - run:
           name: Installing AWS CLI
-          command: sudo apt-get update
-            sudo apt install python3-pip
-            sudo pip3 install awsebcli --upgrade
+          command: sudo apt-get install -y python3-pip
+            sudo pip3 install --upgrade awscli
       - run: aws s3 sync ./app/build s3://learning-how-to-learn
 
 workflows:
