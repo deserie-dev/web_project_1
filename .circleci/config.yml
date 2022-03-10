@@ -11,7 +11,7 @@ jobs:
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
           unzip -q awscliv2.zip
           sudo ./aws/install --update
-      - run: aws s3 sync ./app/build s3://learning-how-to-learn
+      - run: aws s3 sync ../web_project_1 s3://learning-how-to-learn
 
 workflows:
   execute_bulk:
