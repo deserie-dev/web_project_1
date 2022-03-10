@@ -27,7 +27,5 @@ workflows:
   execute_bulk:
     jobs:
       - build_deploy
-  aws-cli:
-    jobs:
       - aws-cli-cred-setup:
           context: aws
