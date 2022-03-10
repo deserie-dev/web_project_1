@@ -1,7 +1,11 @@
 jobs:
-  build_deploy:
-    machine:
-      image: ubuntu-2004:202010-01
+  say-hello:
+    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+    docker:
+      - image: cimg/base:stable
+    # Add steps to the job
+    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
       - run: |
@@ -11,8 +15,10 @@ jobs:
           sudo ./aws/install --update
       - run: aws s3 sync . s3://learning-how-to-learn
 
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   version: 2
   execute_bulk:
     jobs:
-      - build_deploy
+      - say-hello
