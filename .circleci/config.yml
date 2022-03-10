@@ -6,10 +6,11 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - run:
-          name: Installing AWS CLI
-          command: sudo apt-get install -y python3-pip
-            sudo pip3 install --upgrade awscli
+      - run: |
+          # Install AWS CLI
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip -q awscliv2.zip
+          sudo ./aws/install
       - run: aws s3 sync ./app/build s3://learning-how-to-learn
 
 workflows:
