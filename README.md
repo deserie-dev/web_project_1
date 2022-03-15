@@ -10,28 +10,28 @@ CSS file structure done according to BEM Methodology.
 
 ---
 
-## CI/CD Pipeline
+## CI/CD Pipeline Using CircleCI
 
-1. I provisioned an Ubuntu 20.04 server on AWS, and installed Jenkins and Ansible on it using the following commands:
+I used CircleCI to automate the deployment process of my frontend application onto AWS S3.
 
-```
-sudo wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-sudo echo 'deb http://pkg.jenkins.io/debian-stable binary/' | sudo tee -a /etc/apt/sources.list.d/jenkins.list
-sudo apt-add-repository ppa:ansible/ansible -y
-sudo apt-get update
-sudo apt install wget curl git python3-minimal ansible -yq
-sudo apt-get -y install default-jre
-sudo apt-get -y install jenkins
-sudo systemctl start jenkins
-sudo systemctl status jenkins
-netstat -tnlp
-sudo lsof -i:8080
-```
+1. Created an AWS Access Key & Secret key
 
-![](/images/j1.png)
+2. In my repository’s root, I created a folder named .circleci and added a file config.yml with the necessary requirements.
 
-![](/images/j2.png)
+3. Inside my CircleCI account I added environmental variables for region, & AWS Secret Access Key and Access Key that I made in step 1.
 
 ---
 
-2. Create a job, give it a name, click 'Pipeline'
+![](/images/ci-1.png)
+
+---
+
+![](/images/ci-2.png)
+
+---
+
+![](/images/ci-3.png)
+
+---
+
+_All AWS resources have been deleted and the site is now hosted on Netlify_
